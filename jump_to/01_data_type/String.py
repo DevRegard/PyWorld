@@ -3,16 +3,16 @@
 # """ """
 # ''' '''
 
-# \n
-# \t
-# \\
-# \'
-# \"
-# \r
-# \f
-# \a
-# \b
-# \000
+#   \n
+#   \t
+#   \\
+#   \'
+#   \"
+#   \r  : 캐리지 리턴
+#   \f  : 롬 피드
+#   \a  : 벨 소리
+#   \b  : Back Space
+#   \000
 
 print("=" * 500)
 a = "Regard"
@@ -44,20 +44,20 @@ print("today: %d / %d " % (2, 19))
 print("I code in %s" % "Python")
 print("Most important word : %s" % a)
 
-#   %s
-#   %c
-#   %d
-#   %f
-#   %o
-#   %x
+#   %s  : 문자열
+#   %c  : 문자
+#   %d  : 정수
+#   %f  : 실수
+#   %o  : 8진수
+#   %x  : 16진수
 #   %%
 
-print("|%10s|" %a)
-print("|%-10s| \n" %a)
+print("|%10s|" % a)
+print("|%-10s| \n" % a)
 pi = 3.14159265358979323846264338327
-print("|%0.4f|" %pi)
-print("|%-10.4f|" %pi)
-print("|%10.4f| \n" %pi)
+print("|%0.4f|" % pi)
+print("|%-10.4f|" % pi)
+print("|%10.4f| \n" % pi)
 
 # format()
 print("나는 오늘 {0}를 하고, {1}을 하는 중이다.".format("자바", "파이썬"))
@@ -83,12 +83,11 @@ print(f"{'|HELLO, HELLO, HELLO|':!<100}\n")
 print(f'{pi:0.5f}')
 print(f'{pi:10.5f}')
 
-# [문자열 함수]
 
+# [문자열 함수]
 # count()
 # find()    : 없으면 -1 반환
 # index()   : 없으면 오류
-# join()    : "[삽입 문자]".join('[문자열, 리스트, 튜플]')      {삽입}
 
 # upper()
 # lower()
@@ -98,4 +97,5 @@ print(f'{pi:10.5f}')
 # strip()
 
 # replace()
+# join()    : "[삽입 문자]".join('[문자열, 리스트, 튜플]')      {삽입}
 # split()   : [변수].split('[기준 문자]')                     {나누기}
