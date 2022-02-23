@@ -44,3 +44,6 @@ else:
 #   [참일 때] if [조건문] else [거짓일 때]
 lightStatus = "working" if light in trafficLight else "let_fix"
 print(lightStatus)
+
+macCommit = "Mac Commit 성공" if light in trafficLight else "Mac Commit 실패"
+print(macCommit)
